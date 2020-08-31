@@ -30,13 +30,10 @@ var nameSpace = ARC || {};
 		}
 
 		// TweenMax.set("#allNums", { autoAlpha: 0 });
-		TweenMax.set('#drawer', {y:height});
-		TweenMax.set('#bg-img', {scale: 0.5, x:-150 ,y:-125, transformPerspective: 400, force3D: true, rotationZ: 0.01, ease: Linear.easeNone})
-		// TweenMax.set(["#bg-img"], { scale:0.6, x:-170, y:-150});
-		TweenMax.set(['#copy-1'], { x: 0, y: 0, autoAlpha: 1 });
-		TweenMax.set(['#copy-2'], { x: 0, y: -42, autoAlpha: 0 });
 	
-		TweenMax.set(['#logo', "#copy-3", "#copy-4"], { x: 0, autoAlpha: 0 });
+
+		TweenMax.set(['#copy-1'], { x: 0, y: 0, autoAlpha: 1 });
+		TweenMax.set(['#logo',"#copy-2", "#copy-3", "#copy-4"], { x: 0, autoAlpha: 0 });
 		TweenMax.set(["#cta", "#code"], { autoAlpha: 0 });
 
 		wrapper = nameSpace.$('#wrapper');
@@ -102,26 +99,17 @@ var nameSpace = ARC || {};
 
 		timeline
 		
-			.to(["#copy-1"], 0.4, { transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Linear.easeNone })
-
-			.to(["#copy-1"], 0.4, { transformPerspective: 400, autoAlpha: 0, force3D: true, rotationZ: 0.01, ease: Linear.easeNone }, "+=1.5")
+			.to(["#copy-1"], 0.4, { x:-4700, y:440, scale:40, transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Linear.easeNone, onComplete:nameSpace.hideBg }, "+=1.5")
 		
-			.to(["#copy-2"], 0.4, { transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=0.0")
+			.to(["#copy-2"], 0, { transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=0.0")
 
-			.to(["#copy-2", "#bg-img"], 0, { transformPerspective: 400, autoAlpha: 0, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=2.4")
-
+			.to(["#copy-2"], 0, { transformPerspective: 400, autoAlpha: 0, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=2.2")
 
 			.to(["#copy-3"], 0.3, { transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=0.0")
 
-			.to(["#copy-3"], 0.3, { transformPerspective: 400, autoAlpha: 0, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=1.7")
-
-			.to(["#copy-4"], 0.3, { transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=0.0")
-
-			.to('#drawer', 0.5, {y:160, transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeIn })
-
 			.to('#logo', 0.4,{autoAlpha: 1, ease: Cubic.easeInOut } , '+=0.5')
 
-
+	
 
 			.to(["#cta", "#code"], 0, { autoAlpha: 1, ease: Cubic.easeInOut }, "+=0.5");
 	};
@@ -137,7 +125,7 @@ var nameSpace = ARC || {};
 	nameSpace.startAnimation = function () {
 		// Code for animation		
 		timeline.play();
-		// nameSpace.startBgImg();
+		// startBgImg();
 
 
 		// TweenMax.delayedCall(	7.5, loop);
@@ -154,11 +142,6 @@ var nameSpace = ARC || {};
 		// TweenMax.to( cta, 0.4, { opacity: 1 } );
 	};
 
-
-	nameSpace.startBgImg = function() {
-		var t = new TimelineMax;
-		t.to('#bg-img', 2.6, {scale: 0.5, x:-150 ,y:-125, transformPerspective: 400, force3D: true, rotationZ: 0.01, ease: Linear.easeNone})
-	}
 
 
 })();
