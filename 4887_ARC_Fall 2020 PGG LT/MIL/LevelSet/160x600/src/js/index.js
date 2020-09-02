@@ -100,11 +100,10 @@ var nameSpace = ARC || {};
 
 		timeline
 		
-		.to(["#copy-1"], 0.7, { x: 0, transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Linear.easeInOut })
+		.to(["#copy-1"], 0.4, { x: 0, transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeInOut })
 
-		// .to(["#copy-1"], 0.4, { transformPerspective: 400, autoAlpha: 0, force3D: true, rotationZ: 0.01, ease: Linear.easeInOut }, "+=2.4")
 	
-		.to(["#copy-2"], 0.7, { x: 0, transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Linear.easeInOut }, "+=1")
+		.to(["#copy-2"], 0.4, { x: 0, transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeInOut }, "+=1")
 
 		.to(["#copy-1", "#copy-2", "#bg-img"], 0, { transformPerspective: 400, autoAlpha: 0, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=3")
 
