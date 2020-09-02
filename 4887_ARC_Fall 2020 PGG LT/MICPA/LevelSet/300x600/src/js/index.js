@@ -33,8 +33,8 @@ var nameSpace = ARC || {};
 		TweenMax.set('#drawer', {y:height})
 		TweenMax.set(["#bg-img"], { scale:0.9, x:-30, y:-15});
 		TweenMax.set(['#copy-1'], { x: -width, y: 0, autoAlpha: 1 });
-		TweenMax.set(['#copy-1'], { x: -width, y: 0, autoAlpha: 0 });
-		TweenMax.set(['#logo',"#copy-2", "#copy-3", "#copy-4"], { x: 0, autoAlpha: 0 });
+		TweenMax.set(['#copy-2'], { x: -width, y: 0, autoAlpha: 0 });
+		TweenMax.set(['#logo', "#copy-3", "#copy-4"], { x: 0, autoAlpha: 0 });
 		TweenMax.set(["#cta", "#code"], { autoAlpha: 0 });
 
 		wrapper = nameSpace.$('#wrapper');
