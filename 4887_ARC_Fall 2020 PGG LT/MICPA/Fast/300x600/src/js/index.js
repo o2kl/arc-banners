@@ -13,7 +13,7 @@ var nameSpace = ARC || {};
 		ids = [];
 
 		width = 300;
-		height = 600;
+		height = 250;
 
 		//SET IDs IN DOM TO GLOBAL VARIABLES
 		var allElements = document.getElementsByTagName("*");
@@ -99,13 +99,12 @@ var nameSpace = ARC || {};
 
 		timeline
 		
-			.to(["#copy-1"], 0.4, { x:-2400, y:440, scale:40, transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Linear.easeNone, onComplete:nameSpace.hideBg }, "+=1.5")
-		
+			.to(["#copy-1"], 0.4, { x:-3400, y:440, scale:40, transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Linear.easeNone, onComplete:nameSpace.hideBg}, "+=1.5")
+	
 			.to(["#copy-2"], 0, { transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=0.0")
 
-			// .to(["#copy-2"], 0, { transformPerspective: 400, autoAlpha: 0, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=2.2")
 
-			.to(["#copy-3"], 0.3, { transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=1.6")
+			.to(["#copy-3"], 0.3, { transformPerspective: 400, autoAlpha: 1, force3D: true, rotationZ: 0.01, ease: Power2.easeIn }, "+=1.2")
 
 			.to('#logo', 0.4,{autoAlpha: 1, ease: Cubic.easeInOut } , '+=0.5')
 

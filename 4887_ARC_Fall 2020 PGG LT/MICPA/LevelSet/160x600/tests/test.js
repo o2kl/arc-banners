@@ -4,7 +4,7 @@ var imageSize = require('image-size');
 describe('zipfile', function () {
 	it('should be under /Users/jofo/git/o2klBanners/o2kl-ARC-BannerAds/4224-4225-IAS-DIS/BigPicture/160x600/node_modules/.bin/resize-bannekb', function () {
 
-		var zip = fs.statSync('ARC_FallPGG_MIL_FAST_160x600_HTML.zip');
+		var zip = fs.statSync('ARC_FallPGG_MIL_LEVEL_SET_160x600_HTML.zip');
 		var fileSizeInKB = zip['size'] / 1000;
 		expect(fileSizeInKB).not.toBeGreaterThan(150, '\nZip size is ' + fileSizeInKB + 'kb, it should be less than 150kb');
 	});
