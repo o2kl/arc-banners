@@ -185,7 +185,7 @@ gulp.task('imageCompress', ['copy', 'sass'], function (done) {
 
 gulp.task('compress', ['clean', 'copy', 'sass', 'inline', 'replace', 'htmlmin', 'imageCompress'], function () {
   return gulp.src(dist + '/*')
-    .pipe(zip('ARC_FallPGG_MIL_LEVEL_SET_728x90_HTML.zip'))
+    .pipe(zip('ARC_FallPGG_MICPA_LEVEL_SET_728x90_HTML.zip'))
     .pipe(gulp.dest('./'));
 });
 
