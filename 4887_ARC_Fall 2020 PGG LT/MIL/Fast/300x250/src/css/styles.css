@@ -50,7 +50,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.abs-pos, #bg, #bg-color, #copy-rel, #wrapper, #click_through, #logo, #copy-1, #copy-2, #copy-2b, #copy-3, #copy-4, #cta, #code, #ball, #light, #lights, #calc {
+.abs-pos, #bg, #bg-color, #wrapper, #click_through, #logo, #copy-1, #copy-2, #copy-3, #cta, #code {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -65,9 +65,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #bg-color {
   background-color: #ffffff; }
 
-#copy-rel {
-  position: relative; }
-
 #wrapper {
   position: relative;
   visibility: hidden; }
@@ -79,3 +76,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #000000; }
+
+#cta {
+  top: 10px; }
